@@ -5,8 +5,8 @@
 //    has the "tasks" table this app expects. Using a different
 //    project? Create the table first, see README.md.)
 // ------------------------------------------------------------------
-const SUPABASE_URL = "";
-const SUPABASE_ANON_KEY = "";
+const SUPABASE_URL = "https://xrmsjhsdwmvvbmkyigml.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhybXNqaHNkd212dmJta3lpZ21sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM1OTM3NTcsImV4cCI6MjA5OTE2OTc1N30.vWEPW8zmy7xAwlR4WJ9CWHMmgJcC8upkvO-zS1K-ZNA";
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // NOTE: must match the exact table/column names shown in your
