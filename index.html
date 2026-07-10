@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supabase Task App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <main class="task-wrap">
+    <div class="card">
+
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">Task App</span>
+      </div>
+
+      <!-- Create -->
+      <form class="add-form" id="addForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="What needs doing?"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="btn-primary" id="addBtn">
+          <span class="btn-label">Add task</span>
+        </button>
+      </form>
+
+      <p class="hint error" id="formMessage" role="alert"></p>
+
+      <!-- Read -->
+      <div class="list-header">
+        <span>Tasks</span>
+        <span class="task-count" id="taskCount"></span>
+      </div>
+
+      <ul class="task-list" id="taskList">
+        <!-- rendered by app.js -->
+      </ul>
+
+      <p class="empty-state hidden" id="emptyState">No tasks yet. Add your first one above.</p>
+      <p class="loading-state" id="loadingState">Loading tasks…</p>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
